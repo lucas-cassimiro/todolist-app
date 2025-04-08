@@ -1,0 +1,19 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.5rem;
+    font-size: 4rem;
+    margin-left: 20px;
+    border-bottom: 1px dashed #fff;
+}
+
+.themeButton:hover {
+    opacity: 0.8;
+}

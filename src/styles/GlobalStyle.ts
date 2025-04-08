@@ -29,6 +29,8 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: 'Josefin Sans', sans-serif;
+        min-height: 100vh;
+        width: 100%;
 
         background: ${({ theme }) => `url(${theme.backgroundImage}) no-repeat`};
         background-size: cover;
@@ -36,6 +38,10 @@ export const GlobalStyle = createGlobalStyle`
 
         color: ${({ theme }) => theme.text};
         transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
 
