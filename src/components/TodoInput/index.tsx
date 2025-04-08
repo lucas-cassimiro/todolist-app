@@ -1,3 +1,5 @@
+import './style-todo.css'
+
 type TodoInputProps = {
     todo: string
     setTodo: (value: string) => void
@@ -6,11 +8,15 @@ type TodoInputProps = {
 
 export const TodoInput = ({ todo, setTodo, addTodo }: TodoInputProps) => (
     <>
-        <input
-            placeholder='Create a new todo...'
-            value={todo}
-            onChange={(e) => setTodo(e.target.value)}
-        />
-        <button type='button' onClick={addTodo}>Add</button>
+        <div className='container-input'>
+            <input
+            className='input-todo'
+                type='text'
+                placeholder='Criar uma nova tarefa...'
+                value={todo}
+                onChange={(e) => setTodo(e.target.value)}
+            />
+            <button type='button' onClick={addTodo} className="button-add-task">Adicionar Tarefa 📝</button>
+        </div>
     </>
 )
